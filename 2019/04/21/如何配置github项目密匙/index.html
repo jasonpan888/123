@@ -10,6 +10,14 @@
 
     <!--Description-->
     
+        <meta name="description" content="前言
+在此之前需要先要拥有一个自己的GitHub账号;以及已经安装了git工具
+
+操作
+
+首先找到自己的./ssh文件（有些可能找不到那也也是正常的，因为.ssh文件并不是初始化系统必虚的，该目录用于保存生成过的密匙匙，随便找个地方打开git bash，执行下面操作也有效）
+右击.ssh文件夹打开g">
+    
 
     <!--Author-->
     
@@ -18,7 +26,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="USC IHT TEAM">
+        <meta property="og:title" content="如何配置github项目密匙">
     
 
     <!--Open Graph Description-->
@@ -29,7 +37,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -40,7 +48,7 @@
 
     <!-- Title -->
     
-    <title>USC IHT TEAM</title>
+    <title>如何配置github项目密匙 - USC IHT TEAM</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -123,17 +131,14 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">USC IHT TEAM</h1>
-        
     </div>
 </header>
 
         <section class="main">
             
-                
 <div class="post">
 
-    <div class="post-header index">
+    <div class="post-header">
         <h1 class="title">
             <a href="/2019/04/21/如何配置github项目密匙/">
                 如何配置github项目密匙
@@ -148,9 +153,13 @@
         </div>
     </div>
 
-    
-        <div class="content">
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>在此之前需要先要拥有一个自己的GitHub账号;<br>以及已经安装了git工具</p>
 </blockquote>
 <h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><blockquote>
@@ -202,102 +211,20 @@
 </blockquote>
 <p>如果不知道路径在哪 请参考大佬<a href="https://runindark.com/2019/03/23/My%20first%20blog/" target="_blank" rel="noopener">博客</a></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/21/如何恢复静态hexo/">
-                如何恢复静态hexo
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-21</span>
-            
-            
-            
-        </div>
     </div>
 
     
-        <div class="content">
-            <h3 id="如何将本地hexo备份上github"><a href="#如何将本地hexo备份上github" class="headerlink" title="如何将本地hexo备份上github"></a>如何将本地hexo备份上github</h3><blockquote>
-<ul>
-<li>前提：已经配置密匙且上传过hexo静态页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone &quot;远程仓库地址&quot;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>先将远程仓库克隆到本地，</li>
-<li>然后进入clone的目录，打开git bash<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b hexo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>创建并切换成hexo目录</li>
-<li>然后将本地博客内的东西全部复制到该目录中</li>
-<li>然后删除theme目录下的所有.git文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add --all</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>该命令将所有文件加入缓存区<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit &quot;源代码&quot;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>该命令将文件添加 自述内容<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin hexo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>推送至远程仓库</li>
-</ul>
-</blockquote>
-<h3 id="如何重新恢复本地博客"><a href="#如何重新恢复本地博客" class="headerlink" title="如何重新恢复本地博客"></a>如何重新恢复本地博客</h3><blockquote>
-<ul>
-<li>前提：已下载git和nodejs 和绑定密匙</li>
-<li>先找一个文件用来准备存放需要克隆的文件</li>
-<li>在该目录下打开git bash界面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone -b hexo &quot;远程仓库地址&quot;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>然后打开该文件，输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>然后就完成了，接下来操作与正常hexo上传相似，<br>建议以后每次操作为（前提是如果在本地预览后没有问题，）。</li>
-</ul>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git pull</span><br><span class="line">$ hexo d -g</span><br><span class="line">$ git add -all</span><br><span class="line">$ git commit -m &quot;代码自述&quot;</span><br><span class="line">$ git push -u origin hexo</span><br></pre></td></tr></table></figure>
 
-        </div>
+    
+
+    <!-- Comments -->
     
 
 </div>
-            
         </section>
+
     </div>
 </div>
-
-
-
-
 
 
 </div>
